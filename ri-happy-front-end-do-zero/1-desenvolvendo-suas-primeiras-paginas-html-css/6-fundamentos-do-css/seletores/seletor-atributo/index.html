@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Atributo no CSS</title>
+    <style>
+        [type="text"] {
+            border: 2px solid #4CAF50;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        [type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        [type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>O que é o Seletor de Atributo no CSS?</h1>
+    <p>
+        O seletor de atributo no CSS é usado para aplicar estilos a elementos HTML que possuem um atributo específico ou um valor de atributo específico. Ele é definido utilizando colchetes (<code>[]</code>) em volta do nome do atributo ou do atributo com um valor. Por exemplo, o seletor <code>[type="text"]</code> irá aplicar estilos a todos os elementos <code>&lt;input&gt;</code> que possuem o atributo <code>type</code> com o valor "text".
+    </p>
+    <p>
+        O seletor de atributo é muito útil quando você quer estilizar elementos com base em atributos e seus valores, como campos de formulário com diferentes tipos, links com diferentes destinos, entre outros.
+    </p>
+    <p>
+        Exemplo de uso do seletor de atributo no CSS:
+    </p>
+    <pre>
+        <code>
+        [type="text"] {
+            border: 2px solid #4CAF50;
+        }
+
+        [type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        </code>
+    </pre>
+
+    <p>
+        No exemplo acima, estamos estilizando um campo de texto e um botão de envio de formulário com base no atributo <code>type</code> de cada um.
+    </p>
+
+    <form>
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
