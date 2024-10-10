@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Irmão Adjacente</title>
+    <style>
+        /* Estilo apenas para o <p> que é imediatamente após o <h2> */
+        h2 + p {
+            color: green;
+            font-style: italic;
+        }
+
+        /* Estilo para todos os <p> */
+        p {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Combinador Irmão Adjacente</h1>
+
+    <h2>Seção 1</h2>
+    <p>Eu sou o parágrafo imediatamente após o h2.</p>
+    <p>Eu não sou afetado pelo combinador irmão, porque estou separado.</p>
+
+    <h2>Seção 2</h2>
+    <div>
+        <p>Eu não sou irmão adjacente do h2, estou dentro de um div.</p>
+    </div>
+</body>
+</html>

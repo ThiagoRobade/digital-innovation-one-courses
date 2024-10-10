@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinando Seletores no CSS</title>
+    <style>
+        /* Combinando seletor de classe com seletor de atributo */
+        .highlight[type="text"] {
+            border: 2px solid #FF9800;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        /* Combinando seletor de tag com pseudoclasse */
+        button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Combinando dois seletores de classe */
+        .btn.large {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            background-color: #2196F3;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Combinando seletor de descendente */
+        div p {
+            color: #555;
+            font-style: italic;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinando Seletores no CSS</h1>
+    <p>
+        No CSS, você pode combinar diferentes tipos de seletores para aplicar estilos de forma mais específica e poderosa. Isso permite estilizar elementos de acordo com múltiplas condições, como classes, tipos de elementos, atributos e pseudoclasses.
+    </p>
+    <p>
+        Abaixo estão alguns exemplos de combinações de seletores:
+    </p>
+
+    <h2>Exemplo 1: Classe com Atributo</h2>
+    <p>O seletor <code>.highlight[type="text"]</code> aplica estilos aos campos de texto que possuem a classe <code>highlight</code>:</p>
+    <pre><code>
+    .highlight[type="text"] {
+        border: 2px solid #FF9800;
+    }
+    </code></pre>
+    <form>
+        <input type="text" class="highlight" placeholder="Texto destacado">
+    </form>
+
+    <h2>Exemplo 2: Tag com Pseudoclasse</h2>
+    <p>O seletor <code>button:hover</code> aplica estilos ao botão quando o mouse passa por cima dele:</p>
+    <pre><code>
+    button:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+    </code></pre>
+    <button>Botão Interativo</button>
+
+    <h2>Exemplo 3: Duas Classes</h2>
+    <p>O seletor <code>.btn.large</code> aplica estilos a elementos que possuem ambas as classes <code>btn</code> e <code>large</code>:</p>
+    <pre><code>
+    .btn.large {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    </code></pre>
+    <button class="btn large">Botão Grande</button>
+
+    <h2>Exemplo 4: Seletor de Descendência</h2>
+    <p>O seletor <code>div p</code> aplica estilos a todos os parágrafos que são descendentes de uma <code>&lt;div&gt;</code>:</p>
+    <pre><code>
+    div p {
+        color: #555;
+        font-style: italic;
+    }
+    </code></pre>
+    <div>
+        <p>Este parágrafo está dentro de uma div.</p>
+    </div>
+
+</body>
+</html>

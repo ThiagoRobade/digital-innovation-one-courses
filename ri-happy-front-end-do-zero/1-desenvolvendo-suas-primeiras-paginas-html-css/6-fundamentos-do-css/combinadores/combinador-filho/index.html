@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Filho</title>
+    <style>
+        /* Estilo apenas para os <p> que são filhos diretos de <div> */
+        div > p {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Estilo para todos os <p> dentro de <div> (independente do nível) */
+        div p {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Combinador Filho</h1>
+
+    <div>
+        <p>Eu sou filho direto da div.</p>
+        <div>
+            <p>Eu NÃO sou filho direto da div, sou neto.</p>
+        </div>
+    </div>
+
+    <p>Eu estou fora da div.</p>
+</body>
+</html>

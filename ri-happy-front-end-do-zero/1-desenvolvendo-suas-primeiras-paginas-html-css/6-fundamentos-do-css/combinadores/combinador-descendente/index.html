@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Descendente no CSS</title>
+    <style>
+        /* Combinador descendente: estiliza apenas parágrafos dentro de div */
+        div p {
+            color: #4CAF50;
+            font-style: italic;
+        }
+
+        /* Combinador descendente: estiliza spans dentro de elementos com a classe container */
+        .container span {
+            background-color: #FFEB3B;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        /* Combinador descendente: links dentro de listas */
+        ul li a {
+            text-decoration: none;
+            color: #2196F3;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>O que é o Combinador Descendente no CSS?</h1>
+    <p>
+        O combinador descendente no CSS é utilizado para selecionar elementos que são descendentes de outro elemento. Um descendente é qualquer elemento que está aninhado dentro de outro, não necessariamente seu filho direto. No CSS, o combinador descendente é representado por um espaço entre dois seletores.
+    </p>
+    <p>
+        Por exemplo, o seletor <code>div p</code> irá selecionar todos os elementos <code>&lt;p&gt;</code> que estão dentro de um elemento <code>&lt;div&gt;</code>, independentemente de quão aninhados estejam. A seguir, temos exemplos práticos.
+    </p>
+
+    <h2>Exemplo 1: Parágrafos dentro de uma Div</h2>
+    <p>O seletor <code>div p</code> estiliza os parágrafos que estão dentro de um elemento <code>&lt;div&gt;</code>:</p>
+    <pre><code>
+    div p {
+        color: #4CAF50;
+        font-style: italic;
+    }
+    </code></pre>
+    <div>
+        <p>Este parágrafo está dentro de uma div.</p>
+        <p>Outro parágrafo dentro da mesma div.</p>
+    </div>
+    <p>Este parágrafo está fora da div e não será afetado.</p>
+
+    <h2>Exemplo 2: Spans dentro de um Container</h2>
+    <p>O seletor <code>.container span</code> estiliza os elementos <code>&lt;span&gt;</code> que são descendentes de um elemento com a classe <code>container</code>:</p>
+    <pre><code>
+    .container span {
+        background-color: #FFEB3B;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+    </code></pre>
+    <div class="container">
+        <p>Texto com <span>destaque</span> em amarelo.</p>
+    </div>
+
+    <h2>Exemplo 3: Links dentro de Listas</h2>
+    <p>O seletor <code>ul li a</code> estiliza os links (<code>&lt;a&gt;</code>) que estão dentro de itens de lista (<code>&lt;li&gt;</code>) dentro de uma lista não ordenada (<code>&lt;ul&gt;</code>):</p>
+    <pre><code>
+    ul li a {
+        text-decoration: none;
+        color: #2196F3;
+    }
+    </code></pre>
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+
+</body>
+</html>
+
