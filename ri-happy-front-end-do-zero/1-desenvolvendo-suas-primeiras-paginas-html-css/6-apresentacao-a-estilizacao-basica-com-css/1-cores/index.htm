@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+
+        #pre-definidas {
+            color: darkviolet;
+        }
+
+        #current-color {
+            color: orange;
+            border: 2px solid currentColor;
+        }
+
+        #rgb {
+            background: rgb(194, 169, 58);
+            color: rgb(16, 17, 65);
+        }
+
+        #rgba {
+            background: rgba(200, 100, 80, 55);
+            color: rgba(100, 200, 180, 150);
+        }
+
+        #hex {
+            color: #FF0000;
+        }
+
+        #hex-transparencia {
+            color: #FF000080;
+        }
+
+        #hsl {
+            background: hsl(120, 100%, 50%);
+        }
+
+        #hsla {
+            background: hsla(160, 60%, 50%, .4);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem váerias formas de definirmos cores utilizando o CSS, Elas são: </p>
+    <ul>
+        <li id="pre-definidas">Cores pré-definidas</li>
+        <li id="current-color">Palavra-chave "currentcolor"</li>
+        <li id="hex">Hexadecimal</li>
+        <li id="hex-transparencia">Hexadecimal com transparência</li>
+        <li id="rgb">RGB</li>
+        <li id="rgba">RGBA</li>
+        <li id="hsl">HSL</li>
+        <li id="hsla">HSLA</li>
+    </ul>
+</body>
+</html>
